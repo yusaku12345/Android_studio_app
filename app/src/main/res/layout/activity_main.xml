@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ExSample">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/appDescriptionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="このアプリは除雪作業の安全性を向上させるために設計されています。以下の機能が含まれています：\n\n"
+                        android:textSize="32sp"
+                        android:padding="8dp"
+                        android:textColor="#4CAF50"/>
+
+                    <TextView
+                        android:id="@+id/feature1TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. 除雪時の安全アドバイス"
+                        android:textSize="25sp"
+                        android:padding="8dp"
+                        android:textColor="#FF9800" />
+
+                    <TextView
+                    android:id="@+id/feature1.5TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- 除雪作業を行う際の安全対策を提供します。"
+                    android:textSize="22sp"
+                    android:padding="8dp"
+                    android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/feature2TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. 新潟の天気情報"
+                        android:textSize="25sp"
+                        android:padding="8dp"
+                        android:textColor="#FF9800"/>
+
+                    <TextView
+                        android:id="@+id/feature2.5TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- WebViewを使用して、新潟の最新の天気情報を表示します。"
+                        android:textSize="22sp"
+                        android:padding="8dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/feature3TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. 加速度センサによる落下検知"
+                        android:textSize="25sp"
+                        android:padding="8dp"
+                        android:textColor="#FF9800"/>
+
+                    <TextView
+                        android:id="@+id/feature3.5TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- 落下を検知し、警告音を発します。"
+                        android:textSize="22sp"
+                        android:padding="8dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/feature4TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. タイマーによる時間管理"
+                        android:textSize="25sp"
+                        android:padding="8dp"
+                        android:textColor="#FF9800"/>
+
+                    <TextView
+                        android:id="@+id/feature4.5TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- 作業時間を表示し、休憩時間を管理する手助けになります。"
+                        android:textSize="22sp"
+                        android:padding="8dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/snowSafetyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="除雪時の安全アドバイス"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#FF5722"/>
+
+                    <TextView
+                        android:id="@+id/safetyAdviceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="除雪作業を行う際には、以下の安全対策を心がけましょう："
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="20sp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="除雪作業前に体を十分に温め、ストレッチを行う"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="20sp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="適切な防寒具やグリップの効く靴を着用する"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="20sp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="作業中は適度に休憩をとり、疲労や過労を防ぐ"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="20sp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="除雪機具の正しい使用法を理解し、安全に作業する"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="20sp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="雪崩や滑落に注意し、周囲の安全を確保する"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="20sp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="作業中に怪我をした場合は速やかに処置を行い、必要に応じて救急医療を受ける"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="20sp"/>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/x_axis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="40sp"
+                        android:text="X軸：" />
+
+                    <TextView
+                        android:id="@+id/y_axis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="40sp"
+                        android:text="Y軸：" />
+
+                    <TextView
+                        android:id="@+id/z_axis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="40sp"
+                        android:text="Z軸：" />
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="音の停止ボタン"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/timer_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="160sp"
+                        android:text="00:00"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="16dp"/>
+
+
+                    <Button
+                        android:id="@+id/start_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="開始"
+                        android:layout_gravity="center"
+                        android:layout_below="@id/timer_text_view"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:textSize="60sp"/>
+
+                    <Button
+                        android:id="@+id/pause_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="停止"
+                        android:layout_gravity="center"
+                        android:layout_below="@id/start_button"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:textSize="60sp"/>
+
+                    <Button
+                        android:id="@+id/reset_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="リセット"
+                        android:layout_gravity="center"
+                        android:layout_below="@id/pause_button"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:textSize="60sp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
